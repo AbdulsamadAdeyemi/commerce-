@@ -257,3 +257,40 @@ small{
         flex-basis: 100%;
     }
 }
+
+
+/* Product and category artwork */
+.col-3 img,
+.col-4 img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+    border-radius: 12px;
+    background: #fff7ed;
+}
+
+.col-4 h4,
+.col-4 p {
+    overflow-wrap: anywhere;
+}
+
+a:focus-visible {
+    outline: 3px solid #ff523b;
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+
+@media (max-width: 700px) {
+    .header .row {
+        margin-top: 1rem;
+    }
+
+    .col-2 img {
+        padding: 1rem 0;
+    }
+
+    .Testimonial {
+        padding-top: 2rem;
+    }
+}
